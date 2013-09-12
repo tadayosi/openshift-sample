@@ -12,14 +12,12 @@
         <maven.compiler.target>1.6</maven.compiler.target>
     </properties>
     <build>
+        <finalName>sample</finalName>
         <plugins>
             <plugin>
-                <groupId>org.mortbay.jetty</groupId>
-                <artifactId>maven-jetty-plugin</artifactId>
-                <configuration>
-                    <contextPath>/</contextPath>
-                    <reload>manual</reload>
-                </configuration>
+                <groupId>org.jboss.as.plugins</groupId>
+                <artifactId>jboss-as-maven-plugin</artifactId>
+                <version>7.4.Final</version>
             </plugin>
         </plugins>
     </build>
