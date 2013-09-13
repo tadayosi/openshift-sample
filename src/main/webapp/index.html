@@ -51,15 +51,20 @@
 	</div>
 
 	<div class="container">
-		<div class="starter-template">
+		<div class="application">
 			<h1>Sample Application</h1>
 			<p class="lead">This is an OpenShift sample application.</p>
 			<p>
-				<a class="btn btn-primary btn-lg" href="rest/hello/xml/Sample">XML &raquo;</a> <a class="btn btn-primary btn-lg" href="rest/hello/json/Sample">JSON &raquo;</a>
+			<form>
+				<fieldset>
+					<input name="name" id="name" type="text" placeholder="Name"> <a class="btn btn-primary" id="sayHello" href="">Say Hello &raquo;</a>
+				</fieldset>
+			</form>
 			</p>
 		</div>
+		<div id="result" class="alert"></div>
 
-		<hr>
+		<hr />
 
 		<footer>
 			<p>&copy; Tadayoshi Sato 2013</p>
@@ -73,5 +78,7 @@
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/index.js"></script>
 </body>
 </html>
