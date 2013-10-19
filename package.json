@@ -1,0 +1,10 @@
+{
+  "name": "openshift-sample",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-bower-requirejs": "~0.7.0",
+    "load-grunt-tasks": "~0.1.0"
+  }
+}

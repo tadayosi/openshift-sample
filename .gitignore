@@ -1,1 +1,6 @@
+.*
+!.gitignore
+!.bowerrc
 target/
+node_modules/
+bower_components/
