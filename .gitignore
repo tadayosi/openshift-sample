@@ -1,6 +1,8 @@
 .*
 !.gitignore
 !.bowerrc
-target/
+/bin/
+/build/
+/target/
 node_modules/
 bower_components/
