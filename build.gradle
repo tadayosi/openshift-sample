@@ -6,10 +6,13 @@ sourceCompatibility = 1.7
 targetCompatibility = 1.7
 version = '1.0'
 
-repositories { mavenCentral() }
+repositories {
+    mavenCentral()
+    maven { url "https://repository.jboss.org/nexus/content/groups/public-jboss/" }
+}
 
 dependencies {
-    providedCompile 'org.jboss.spec:jboss-javaee-6.0:1.0.0.Final'
+    providedCompile 'org.jboss.spec:jboss-javaee-6.0:3.0.2.Final'
     providedCompile 'log4j:log4j:1.2.17'
     testCompile 'junit:junit:4.11'
     testCompile 'org.hamcrest:hamcrest-library:1.3'
@@ -27,7 +30,7 @@ processResources {
 war {
     archiveName = 'sample.war'
     includeEmptyDirs = false
-    
+
     /*
      project.ext.excludes = fileTree('src/main/webapp/bower_components') {
      exclude 'bootstrap/dist/css/bootstrap.css'
